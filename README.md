@@ -1,4 +1,4 @@
-# Como levantar una base de datos postgres dentro de docker
+# Como levantar una base de datos postgreSQL dentro de una imagen de docker
 
 ### Descripcion de funcionamiento:
 Se va a levantar un deamon de docker con una base de datos postgreSQL con version a eleccion.
