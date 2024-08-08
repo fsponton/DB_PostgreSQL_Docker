@@ -67,6 +67,7 @@ psql -X -h localhost -U postgres -d Chinook_PostgreSql -f /tmp/Chinook_PostgreSq
 
 echo "####################"
 echo "# fin" 
+
 ################################################################
 
 
