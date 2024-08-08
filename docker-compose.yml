@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+
+    dbTodo:
+      image: postgres:14     # Version de postgres que se quiere instalar
+      container_name: dbTodo 
+      environment:           # Credenciales para acceder a postgres
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=qwerty123
+      ports:
+        - "65432:5432"   # puerto de entrada de docker : puerto de postgres
