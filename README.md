@@ -77,17 +77,16 @@ echo "# fin"
 #### Ejemplo n2
 
 ################################################################
+
 echo "# crear databases "
 
 export PGPASSWORD='qwerty123'
 
-# Crear y restaurar la base de datos NOMBRE1
 echo "## Crear y restaurar base de datos NOMBRE1"
 psql -X -h localhost -U postgres -c "DROP DATABASE IF EXISTS db_nombre1"
 psql -X -h localhost -U postgres -c "CREATE DATABASE db_nombre1"
 psql -X -h localhost -U postgres -d db_nombre1 -f "/tmp/nombre1.sql"
 
-# Crear y restaurar la base de datos NOMBRE2
 echo "## Crear y restaurar base de datos NOMBRE2"
 psql -X -h localhost -U postgres -c "DROP DATABASE IF EXISTS db_nombre2"
 psql -X -h localhost -U postgres -c "CREATE DATABASE db_nombre2"
@@ -95,6 +94,7 @@ psql -X -h localhost -U postgres -d db_nombre2 - f"/tmp/dbnombre2.sql"
 
 echo "####################"
 echo "# fin" 
+
 ################################################################
 
 ## NOTA: para restaurtar una base de datos, es decir: importar un dump/backup es necesario cambiar la instruccion a ejecutar:
